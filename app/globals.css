@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+body {
+  @apply bg-slate-900 text-white min-h-screen;
+}
+
+/* Custom styles */
+.gradient-text {
+  background: linear-gradient(135deg, #1e40af, #7c3aed, #06b6d4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, #0f172a 0%, #1e40af 50%, #7c3aed 100%);
+}
+
+.card-glow {
+  box-shadow: 0 0 20px rgba(76, 58, 237, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 30px rgba(90, 106, 226, 0.5);
+  transform: translateY(-5px);
+}
