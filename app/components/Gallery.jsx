@@ -1,22 +1,38 @@
+import Image from "next/image"
+import Link from "next/link"
+import Marquee from "react-fast-marquee"
+import g1 from "@/assets/g1.jpeg"
+import g2 from "@/assets/g2.jpeg"
+import g3 from "@/assets/g3.jpeg"
+import g4 from "@/assets/g4.jpeg"
+
 export default function Gallery() {
+  const galleryImages = [g1, g2, g3, g4, g1, g2, g3, g4] // Duplicate for seamless loop
+
   return (
-    <section className="py-20 bg-slate-800">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-20 bg-slate-950">
+      <div className="max-w-6xl mx-auto px-2 md:px-0">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
             GALLERY
           </h2>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-6">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <div key={item} className="bg-slate-900 rounded-xl overflow-hidden card-glow">
-              <div className="h-64 bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
-                <span className="text-white font-semibold text-2xl">{item}</span>
+        <Marquee speed={70} gradient={false} pauseOnHover={true}>
+          {galleryImages.map((image, index) => (
+            <div key={index} className="border border-gray-500 rounded-xl overflow-hidden mx-3">
+              <div className="h-44 w-60 md:h-64 md:w-80">
+                <Image 
+                  src={image} 
+                  alt={`Gallery image ${index + 1}`}
+                  className="w-full h-full object-cover"
+                  width={320}
+                  height={256}
+                />
               </div>
             </div>
           ))}
-        </div>
+        </Marquee>
       </div>
     </section>
   )

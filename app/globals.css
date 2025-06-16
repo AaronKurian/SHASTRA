@@ -4,7 +4,7 @@
 
 /* Global styles */
 body {
-  @apply bg-slate-900 text-white min-h-screen;
+  @apply bg-slate-950 text-white min-h-screen;
 }
 
 /* Custom styles */
@@ -20,11 +20,43 @@ body {
 }
 
 .card-glow {
-  box-shadow: 0 0 20px rgba(76, 58, 237, 0.3);
+  box-shadow: 0 0 10px rgba(76, 58, 237, 0.2);
   transition: all 0.3s ease;
 }
 
 .card-glow:hover {
-  box-shadow: 0 0 30px rgba(90, 106, 226, 0.5);
+  box-shadow: 0 0 20px rgba(90, 106, 226, 0.2);
   transform: translateY(-5px);
 }
+
+@keyframes shine {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.text-shine {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  background-position: -100% 0;
+  animation: shine 3s ease-in-out infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.translucent-text {
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+

@@ -33,7 +33,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="min-h-screen pt-2 bg-slate-900">
+    <div className="min-h-screen bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">
           CONTACTS
@@ -78,7 +78,7 @@ export default function Contact() {
               <div 
                 key={index} 
                 ref={cardRef}
-                className="bg-white/10 backdrop-blur-sm rounded-md p-6  card-glow text-center cursor-pointer transition-all duration-300 ease-out"
+                className="bg-gradient-to-bl from-black/10 via-purple-300/10 to-black/10 backdrop-blur-md border border-slate-700 rounded-xl p-6  card-glow text-center cursor-pointer transition-all duration-300 ease-out"
                 style={{
                   transform: transform,
                   transformStyle: 'preserve-3d',
@@ -94,7 +94,7 @@ export default function Contact() {
                     alt={member.name}
                     width={120}
                     height={120}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover drop-shadow-[0_0_10px_#5e00ff]"
                   />
                 </div>
                 
@@ -106,21 +106,21 @@ export default function Contact() {
                 <div className="flex justify-center space-x-4">
                   <a 
                     href={`mailto:${member.email}`} 
-                    className={`text-gray-400 hover:text-cyan-400 transition-all duration-300 text-xl hover:scale-125`}
+                    className={`text-gray-400 hover:text-indigo-400 transition-all duration-300 text-xl hover:scale-125`}
                     aria-label="Email"
                   >
                     <FaEnvelope />
                   </a>
                   <a 
                     href={member.linkedin} 
-                    className={`text-gray-400 hover:text-cyan-400 transition-all duration-300 text-xl hover:scale-125`}
+                    className={`text-gray-400 hover:text-indigo-400 transition-all duration-300 text-xl hover:scale-125`}
                     aria-label="LinkedIn"
                   >
                     <FaLinkedinIn />
                   </a>
                   <a 
                     href={`tel:${member.phone}`} 
-                    className={`text-gray-400 hover:text-cyan-400 transition-all duration-300 text-xl hover:scale-125`}
+                    className={`text-gray-400 hover:text-indigo-400 transition-all duration-300 text-xl hover:scale-125`}
                     aria-label="Phone"
                   >
                     <FaPhone />

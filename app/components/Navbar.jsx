@@ -10,7 +10,7 @@ import { NavItems } from "@/constants";
 const Navbar = () => {
   const [mobilenav, setmobilenav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [isSignedIn, setIsSignedIn] = useState(false); // Auth state
+  const [isSignedIn, setIsSignedIn] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,14 +32,13 @@ const Navbar = () => {
   }, [mobilenav]);
 
   const handleAuthClick = () => {
-    // Toggle sign in/out state (you can replace this with actual auth logic)
     setIsSignedIn(!isSignedIn);
   };
 
   return (
     <div
       className={`w-screen text-white max-h-[90px] h-full flex flex-row items-center justify-between max-lg:pl-3 lg:justify-center lg:px-[3.5rem] fixed top-0 z-[999] transition-all duration-300 ${
-        scrolled ? "bg-custom-dark/[.5] backdrop-blur" : "bg-transparent"
+        scrolled ? "bg-black/[.5] backdrop-blur" : "bg-transparent"
       }`}
     >
       <Link 
@@ -79,7 +78,7 @@ const Navbar = () => {
           <Link
             key={index}
             href={item.link}
-            className="font-satoshi text-base hover:bg-gradient-to-r hover:from-[#E283BD] hover:to-[#E2CF6C] hover:bg-clip-text hover:text-transparent group transition-all duration-300 ease-in-out lg:ml-8"
+            className="font-satoshi text-base hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:bg-clip-text hover:text-transparent group transition-all duration-300 ease-in-out lg:ml-8"
             onClick={() => mobilenav && setmobilenav(!mobilenav)}
           >
             {item.title}
