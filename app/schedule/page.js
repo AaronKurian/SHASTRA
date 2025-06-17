@@ -1,5 +1,7 @@
 'use client'
 import { useState } from 'react'
+import ParticleBackground from '../components/Particles'
+
 
 export default function Schedule() {
   const [selectedDay, setSelectedDay] = useState('Day 1')
@@ -94,6 +96,10 @@ export default function Schedule() {
 
   return (
     <div className="min-h-screen bg-slate-950">
+      {/* Particle Background */}
+      <ParticleBackground />
+      
+      {/* Schedule Container */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">
           SCHEDULE

@@ -1,5 +1,7 @@
 'use client'
 import { useState } from 'react'
+import ParticleBackground from '../components/Particles'
+
 
 export default function Events() {
   const [selectedFilter, setSelectedFilter] = useState('ALL')
@@ -74,6 +76,8 @@ export default function Events() {
 
   return (
     <div className="min-h-screen pt-2 bg-slate-950">
+      {/* Particle Background */}
+      <ParticleBackground />
       <div className="max-w-7xl mx-auto px-4 py-12">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">
           EVENTS
