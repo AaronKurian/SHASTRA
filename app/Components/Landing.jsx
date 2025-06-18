@@ -3,7 +3,6 @@ import { useRef, useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import Image from "next/image"
 import satellite2 from "@/assets/satellite2.png"
-import d2 from "@/assets/d2.png"
 import moon from "@/assets/moon.png"
 import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa'
 import { IoChevronDown } from "react-icons/io5"
