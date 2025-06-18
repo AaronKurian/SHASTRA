@@ -1,6 +1,5 @@
 'use client'
 import Image from "next/image"
-import Link from "next/link"
 import keyvalueLogo from "@/assets/keyvalue.jpg"
 import geojitLogo from "@/assets/geojit.jpg"
 import news24Logo from "@/assets/twentyfournews.png"
@@ -17,7 +16,7 @@ export default function Partners() {
 
   return (
     <section className="min-h-screen max-w-screen overflow-visible py-20 bg-slate-950">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 z-20 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-mechanismo mb-6 gradient-text" data-aos="fade-up">
             OUR PARTNERS
@@ -42,19 +41,20 @@ export default function Partners() {
                   className="object-contain rounded-lg"
                 />
               </div>
-              {/* <h3 className="text-xl font-semibold text-white mb-2">{partner.name}</h3> */}
+
               <p className="text-xl font-semibold text-gray-400">{partner.type}</p>
             </a>
           ))}
         </div>
       </div>
-      {/* Satellite image positioned at left bottom and flipped vertically */}
-      <div className="absolute right-0 z-10" data-aos="fade-left">
+
+      <div className="absolute right-0 z-10 opacity-70" >
        <Image
          src={satellite}
          alt="Satellite"
          className="w-56 md:w-72 mt-6 md:mt-0 h-auto opacity-70"
          priority
+         data-aos="fade-left"
        />
      </div>
     </section>

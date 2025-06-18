@@ -1,12 +1,10 @@
 import Image from "next/image"
 import meteor from "@/assets/meteor1.png"
-import ParticleBackground from './Particles'
 
 
 export default function About() {
   return (
     <section className="min-h-screen max-w-screen py-20 bg-slate-950 overflow-visible relative">
-      {/* <ParticleBackground /> */}
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 font-mechanismo gradient-text" data-aos="fade-up">
@@ -27,7 +25,6 @@ export default function About() {
         </div>
       </div>
       
-      {/* Meteor image positioned at left bottom */}
       <div className="absolute -left-12 z-10" data-aos="fade-right">
         <Image
           src={meteor}

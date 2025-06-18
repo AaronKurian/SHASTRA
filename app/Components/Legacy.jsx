@@ -5,8 +5,6 @@ import l2 from "@/assets/l2.png"
 import l3 from "@/assets/l3.png"
 import l4 from "@/assets/l4.png"
 
-
-
 export default function Legacy() {
   const legacyImages = [
     { image: l1, alt: 'Legacy 1' },
@@ -22,7 +20,7 @@ export default function Legacy() {
 
   return (
     <section className="min-h-screen max-w-screen overflow-visible py-20 bg-slate-950 relative">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 z-20 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-mechanismo mb-6 gradient-text" data-aos="fade-up">
             OUR LEGACY
@@ -59,7 +57,7 @@ export default function Legacy() {
           </div>
         </div>
       </div>
-      {/* Meteor image positioned at right bottom */}
+
       <div className="absolute right-0 z-10" data-aos="fade-left">
         <Image
           src={meteor}

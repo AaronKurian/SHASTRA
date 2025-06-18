@@ -3,7 +3,7 @@ import { FaEnvelope, FaLinkedinIn, FaPhone } from 'react-icons/fa'
 import { useState, useRef } from 'react'
 import Image from 'next/image';
 import sreeparvathy from '@/assets/sreeparvathy.png';
-import ParticleBackground from '../components/Particles'
+import ParticleBackground from '../Components/Particles'
 
 
 export default function Contact() {
@@ -37,106 +37,102 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-slate-950">
 
-      {/* Particle Background */}
       <ParticleBackground />
       
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold font-mechanismo text-center mb-12 gradient-text" data-aos="fade-up">
-          CONTACTS
-        </h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-8 md:mx-48">
-          {teamMembers.map((member, index) => {
-            const [isHovered, setIsHovered] = useState(false);
-            const [transform, setTransform] = useState('');
-            const cardRef = useRef(null);
+      <div className="relative z-10">
+        <div className="max-w-7xl mx-auto px-4 py-12">
+          <h1 className="text-4xl md:text-5xl font-bold font-mechanismo text-center mb-12 gradient-text" data-aos="fade-up">
+            CONTACTS
+          </h1>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-8 md:mx-48">
+            {teamMembers.map((member, index) => {
+              const [isHovered, setIsHovered] = useState(false);
+              const [transform, setTransform] = useState('');
+              const cardRef = useRef(null);
 
-            const handleMouseMove = (e) => {
-              if (!cardRef.current) return;
-              
-              const card = cardRef.current;
-              const rect = card.getBoundingClientRect();
-              
-              // Calculate mouse position relative to card center
-              const x = e.clientX - rect.left;
-              const y = e.clientY - rect.top;
-              
-              const centerX = rect.width / 2;
-              const centerY = rect.height / 2;
-              
-              // Calculate rotation values (-15 to 15 degrees for subtler effect)
-              const rotateX = ((y - centerY) / centerY) * -15;
-              const rotateY = ((x - centerX) / centerX) * 15;
-              
-              setTransform(`perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(30px)`);
-            };
-
-            const handleMouseEnter = () => {
-              setIsHovered(true);
-            };
-
-            const handleMouseLeave = () => {
-              setIsHovered(false);
-              setTransform('');
-            };
-
-            return (
-              <div 
-                key={index} 
-                ref={cardRef}
-                className="bg-gradient-to-bl from-black/10 via-purple-300/10 to-black/10 backdrop-blur-sm border border-slate-700 rounded-xl p-6  card-glow text-center cursor-pointer transition-all duration-300 ease-out"
-                style={{
-                  transform: transform,
-                  transformStyle: 'preserve-3d',
-                }}
-                onMouseMove={handleMouseMove}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-                data-aos="fade-up"
-              >
-                {/* Profile Picture */}
-                <div className={`w-48 h-48 mx-auto mb-4 rounded-lg overflow-hidden transition-transform duration-300 ${isHovered ? 'scale-104' : ''}`}>
-                  <Image 
-                    src={member.image} 
-                    alt={member.name}
-                    width={120}
-                    height={120}
-                    className="w-full h-full object-cover drop-shadow-[0_0_10px_#5e00ff]"
-                    data-aos="zoom-in"
-                  />
-                </div>
+              const handleMouseMove = (e) => {
+                if (!cardRef.current) return;
                 
-                {/* Name and Position */}
-                <h3 className="text-xl font-semibold text-white mb-2" data-aos="fade-up" >{member.name}</h3>
-                <p className="text-cyan-400 mb-4 text-sm" data-aos="fade-up" >{member.position}</p>
+                const card = cardRef.current;
+                const rect = card.getBoundingClientRect();
                 
-                {/* Contact Icons */}
-                <div className="flex justify-center space-x-4" data-aos="fade-up" >
-                  <a 
-                    href={`mailto:${member.email}`} 
-                    className={`text-gray-400 hover:text-indigo-400 transition-all duration-300 text-xl hover:scale-125`}
-                    aria-label="Email"
-                  >
-                    <FaEnvelope />
-                  </a>
-                  <a 
-                    href={member.linkedin} 
-                    className={`text-gray-400 hover:text-indigo-400 transition-all duration-300 text-xl hover:scale-125`}
-                    aria-label="LinkedIn"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                  <a 
-                    href={`tel:${member.phone}`} 
-                    className={`text-gray-400 hover:text-indigo-400 transition-all duration-300 text-xl hover:scale-125`}
-                    aria-label="Phone"
-                  >
-                    <FaPhone />
-                  </a>
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = ((y - centerY) / centerY) * -15;
+                const rotateY = ((x - centerX) / centerX) * 15;
+                
+                setTransform(`perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(30px)`);
+              };
+
+              const handleMouseEnter = () => {
+                setIsHovered(true);
+              };
+
+              const handleMouseLeave = () => {
+                setIsHovered(false);
+                setTransform('');
+              };
+
+              return (
+                <div 
+                  key={index} 
+                  ref={cardRef}
+                  className="bg-gradient-to-bl from-black/10 via-purple-300/10 to-black/10 backdrop-blur-sm border border-slate-700 rounded-xl p-6  card-glow text-center cursor-pointer transition-all duration-300 ease-out"
+                  style={{
+                    transform: transform,
+                    transformStyle: 'preserve-3d',
+                  }}
+                  onMouseMove={handleMouseMove}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  data-aos="fade-up"
+                >
+                  <div className={`w-48 h-48 mx-auto mb-4 rounded-lg overflow-hidden transition-transform duration-300 ${isHovered ? 'scale-104' : ''}`}>
+                    <Image 
+                      src={member.image} 
+                      alt={member.name}
+                      width={120}
+                      height={120}
+                      className="w-full h-full object-cover drop-shadow-[0_0_10px_#5e00ff]"
+                      data-aos="zoom-in"
+                    />
+                  </div>
+                  
+                  <h3 className="text-xl font-semibold text-white mb-2" data-aos="fade-up" >{member.name}</h3>
+                  <p className="text-cyan-400 mb-4 text-sm" data-aos="fade-up" >{member.position}</p>
+                  
+                  <div className="flex justify-center space-x-4" data-aos="fade-up" >
+                    <a 
+                      href={`mailto:${member.email}`} 
+                      className={`text-gray-400 hover:text-indigo-400 transition-all duration-300 text-xl hover:scale-125`}
+                      aria-label="Email"
+                    >
+                      <FaEnvelope />
+                    </a>
+                    <a 
+                      href={member.linkedin} 
+                      className={`text-gray-400 hover:text-indigo-400 transition-all duration-300 text-xl hover:scale-125`}
+                      aria-label="LinkedIn"
+                    >
+                      <FaLinkedinIn />
+                    </a>
+                    <a 
+                      href={`tel:${member.phone}`} 
+                      className={`text-gray-400 hover:text-indigo-400 transition-all duration-300 text-xl hover:scale-125`}
+                      aria-label="Phone"
+                    >
+                      <FaPhone />
+                    </a>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

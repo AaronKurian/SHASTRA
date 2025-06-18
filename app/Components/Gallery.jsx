@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
 import Marquee from "react-fast-marquee"
 import g1 from "@/assets/g1.jpeg"
 import g2 from "@/assets/g2.jpeg"
@@ -8,11 +7,11 @@ import g4 from "@/assets/g4.jpeg"
 import satellite from "@/assets/satellite1.png"
 
 export default function Gallery() {
-  const galleryImages = [g1, g2, g3, g4, g1, g2, g3, g4] // Duplicate for seamless loop
+  const galleryImages = [g1, g2, g3, g4, g1, g2, g3, g4]
 
   return (
     <section className="py-20 bg-slate-950 relative">
-      <div className="max-w-6xl mx-auto px-2 md:px-0">
+      <div className="max-w-6xl mx-auto px-2 md:px-0 z-20 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-mechanismo mb-6 gradient-text" data-aos="fade-up">
             GALLERY
@@ -35,7 +34,6 @@ export default function Gallery() {
           ))}
         </Marquee>
       </div>
-      {/* Satellite image positioned at left bottom and flipped vertically */}
       <div className="absolute -bottom-16 md:-bottom-32 left-0 md:left-4 z-10" data-aos="fade-right">
         <Image
           src={satellite}
