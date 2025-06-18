@@ -56,3 +56,9 @@
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
 }
 
+.font-huninn {
+  font-family: "Huninn", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+

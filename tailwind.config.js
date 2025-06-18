@@ -12,6 +12,9 @@ module.exports = {
         'primary-purple': '#7c3aed',
         'accent-cyan': '#06b6d4',
       },
+      fontFamily: {
+        mechanismo: ["var(--font-mechanismo)", "sans-serif"],
+      },
     },
   },
   plugins: [],

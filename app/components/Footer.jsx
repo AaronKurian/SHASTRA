@@ -8,22 +8,22 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="min-h-screen bg-slate-950 py-12">
+    <footer className="min-h-screen max-w-screen overflow-hidden bg-slate-950 py-12">
       <div className="max-w-6xl mx-auto px-4">
         {/* New centered section */}
         <div className="py-24 md:py-8 text-center">
           {/* Center logo */}
           <div className="mb-24">
-            <h3 className="text-7xl font-bold translucent-text text-shine select-none">SHASTRA</h3>
+            <h3 className="text-5xl md:text-7xl font-bold font-mechanismo translucent-text text-shine select-none" data-aos="zoom-in">SHASTRA</h3>
           </div>
           
           {/* Centered text */}
           <div className="mb-8">
-            <p className="text-xl font-semibold  text-white">Ready for liftoff?</p>
+            <p className="text-xl font-semibold  text-white" data-aos="fade-up">Ready for liftoff?</p>
           </div>
           
           <div className="mb-6">
-            <p className="text-lg text-gray-300">A galaxy of innovations, excitement and wonder awaits.</p>
+            <p className="text-lg text-gray-300" data-aos="fade-up">A galaxy of innovations, excitement and wonder awaits.</p>
           </div>
         </div>
         

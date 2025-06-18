@@ -5,6 +5,7 @@ import keyvalueLogo from "@/assets/keyvalue.jpg"
 import geojitLogo from "@/assets/geojit.jpg"
 import news24Logo from "@/assets/twentyfournews.png"
 import radioMangoLogo from "@/assets/radiomango.jpg"
+import satellite from "@/assets/satellite3.png"
 
 export default function Partners() {
   const partners = [
@@ -15,15 +16,15 @@ export default function Partners() {
   ]
 
   return (
-    <section className="py-20 bg-slate-950">
+    <section className="min-h-screen max-w-screen overflow-visible py-20 bg-slate-950">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+          <h2 className="text-4xl md:text-5xl font-bold font-mechanismo mb-6 gradient-text" data-aos="fade-up">
             OUR PARTNERS
           </h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mx-4 md:mx-56">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mx-4 md:mx-56" data-aos="fade-up">
           {partners.map((partner, index) => (
             <a 
               key={index} 
@@ -32,7 +33,7 @@ export default function Partners() {
               rel="noopener noreferrer"
               className="bg-white/10 border border-slate-700 rounded-xl p-6 text-center hover:scale-105 transition-transform duration-300 block"
             >
-              <div className=" mx-auto mb-4 flex items-center justify-center">
+              <div className=" mx-auto mb-4 flex items-center justify-center" data-aos="fade-up">
                 <Image 
                   src={partner.logo} 
                   alt={partner.name}
@@ -47,6 +48,15 @@ export default function Partners() {
           ))}
         </div>
       </div>
+      {/* Satellite image positioned at left bottom and flipped vertically */}
+      <div className="absolute right-0 z-10" data-aos="fade-left">
+       <Image
+         src={satellite}
+         alt="Satellite"
+         className="w-56 md:w-72 mt-6 md:mt-0 h-auto opacity-70"
+         priority
+       />
+     </div>
     </section>
   )
 }

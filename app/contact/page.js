@@ -41,7 +41,7 @@ export default function Contact() {
       <ParticleBackground />
       
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">
+        <h1 className="text-4xl md:text-5xl font-bold font-mechanismo text-center mb-12 gradient-text" data-aos="fade-up">
           CONTACTS
         </h1>
         
@@ -84,7 +84,7 @@ export default function Contact() {
               <div 
                 key={index} 
                 ref={cardRef}
-                className="bg-gradient-to-bl from-black/10 via-purple-300/10 to-black/10 backdrop-blur-md border border-slate-700 rounded-xl p-6  card-glow text-center cursor-pointer transition-all duration-300 ease-out"
+                className="bg-gradient-to-bl from-black/10 via-purple-300/10 to-black/10 backdrop-blur-sm border border-slate-700 rounded-xl p-6  card-glow text-center cursor-pointer transition-all duration-300 ease-out"
                 style={{
                   transform: transform,
                   transformStyle: 'preserve-3d',
@@ -92,6 +92,7 @@ export default function Contact() {
                 onMouseMove={handleMouseMove}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
+                data-aos="fade-up"
               >
                 {/* Profile Picture */}
                 <div className={`w-48 h-48 mx-auto mb-4 rounded-lg overflow-hidden transition-transform duration-300 ${isHovered ? 'scale-104' : ''}`}>
@@ -101,15 +102,16 @@ export default function Contact() {
                     width={120}
                     height={120}
                     className="w-full h-full object-cover drop-shadow-[0_0_10px_#5e00ff]"
+                    data-aos="zoom-in"
                   />
                 </div>
                 
                 {/* Name and Position */}
-                <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
-                <p className="text-cyan-400 mb-4 text-sm">{member.position}</p>
+                <h3 className="text-xl font-semibold text-white mb-2" data-aos="fade-up" >{member.name}</h3>
+                <p className="text-cyan-400 mb-4 text-sm" data-aos="fade-up" >{member.position}</p>
                 
                 {/* Contact Icons */}
-                <div className="flex justify-center space-x-4">
+                <div className="flex justify-center space-x-4" data-aos="fade-up" >
                   <a 
                     href={`mailto:${member.email}`} 
                     className={`text-gray-400 hover:text-indigo-400 transition-all duration-300 text-xl hover:scale-125`}

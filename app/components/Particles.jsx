@@ -18,18 +18,12 @@ export default function ParticleBackground() {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        background: {
-          color: {
-            value: "transparent",
-          },
-        },
-        fpsLimit: 120,
         particles: {
           number: {
             value: 120,
             density: {
               enable: true,
-              area: 700
+              value_area: 700
             }
           },
           color: {
@@ -42,7 +36,7 @@ export default function ParticleBackground() {
               color: "#000000"
             },
             polygon: {
-              sides: 5
+              nb_sides: 5
             },
             image: {
               src: "img/github.svg",
@@ -53,24 +47,24 @@ export default function ParticleBackground() {
           opacity: {
             value: 0.2762060339181007,
             random: true,
-            animation: {
+            anim: {
               enable: false,
               speed: 1,
-              minimumValue: 0.1,
+              opacity_min: 0.1,
               sync: false
             }
           },
           size: {
             value: 2,
             random: true,
-            animation: {
+            anim: {
               enable: false,
               speed: 40,
-              minimumValue: 0.1,
+              size_min: 0.1,
               sync: false
             }
           },
-          links: {
+          line_linked: {
             enable: false,
             distance: 150,
             color: "#ffffff",
@@ -83,9 +77,7 @@ export default function ParticleBackground() {
             direction: "none",
             random: true,
             straight: false,
-            outModes: {
-              default: "out"
-            },
+            out_mode: "out",
             bounce: false,
             attract: {
               enable: false,
@@ -95,13 +87,13 @@ export default function ParticleBackground() {
           }
         },
         interactivity: {
-          detectsOn: "canvas",
+          detect_on: "canvas",
           events: {
-            onHover: {
+            onhover: {
               enable: false,
               mode: "repulse"
             },
-            onClick: {
+            onclick: {
               enable: false,
               mode: "push"
             },
@@ -110,7 +102,7 @@ export default function ParticleBackground() {
           modes: {
             grab: {
               distance: 400,
-              links: {
+              line_linked: {
                 opacity: 1
               }
             },
@@ -126,16 +118,16 @@ export default function ParticleBackground() {
               duration: 0.4
             },
             push: {
-              quantity: 4
+              particles_nb: 4
             },
             remove: {
-              quantity: 2
+              particles_nb: 2
             }
           }
         },
-        detectRetina: true
+        retina_detect: true
       }}
-      className="absolute inset-0 z-0"
+      className="absolute inset-0 z-10 pointer-events-none"
     />
   )
 }

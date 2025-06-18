@@ -72,14 +72,15 @@ export default function Competitions() {
       {/* Particle Background */}
       <ParticleBackground />
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">
+        <h1 className="text-4xl md:text-5xl font-bold font-mechanismo text-center mb-12 gradient-text"
+        data-aos="fade-up">
           COMPETITIONS
         </h1>
         
         {/* Filter and Sort Controls */}
-        <div className="flex justify-center mb-12">
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-slate-700">
-            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
+        <div className="flex justify-center mb-12" data-aos="fade-up" >
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-slate-700" data-aos="fade-up" >
+            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4" data-aos="fade-up" >
               {/* Filter Buttons */}
               <div className="flex flex-wrap gap-2 justify-center">
                 {filterOptions.map((filter) => (
@@ -120,11 +121,11 @@ export default function Competitions() {
         </div>
 
         {/* Competitions Grid */}
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8 mx-4 md:mx-24">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 mx-4 md:mx-24" data-aos="fade-up">
           {sortedCompetitions.map((comp, index) => (
-            <div key={index} className="bg-gradient-to-br from-black/10 via-blue-300/10 to-black/10 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 hover:scale-105 transition-transform duration-300 text-center w-72 md:w-80">
+            <div key={index} className="bg-gradient-to-br from-black/10 via-blue-300/10 to-black/10 backdrop-blur-sm border border-slate-700 rounded-xl p-4 md:p-6 hover:scale-105 transition-transform duration-300 text-center w-72 md:w-80" data-aos="fade-up">
               {/* Competition Image */}
-              <div className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-3 md:mb-4 rounded-lg overflow-hidden">
+              <div className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-3 md:mb-4 rounded-lg overflow-hidden" data-aos="fade-up">
                 <Image 
                   src={comp.image} 
                   alt={comp.title}
@@ -135,7 +136,7 @@ export default function Competitions() {
               </div>
               
               {/* Category Badge */}
-              <div className="mb-2 md:mb-3">
+              <div className="mb-2 md:mb-3" data-aos="fade-up">
                 <span className={`px-2 py-1 md:px-3 md:py-1 rounded-lg text-xs md:text-sm font-semibold ${
                   comp.category === 'CS Tech' ? 'bg-transparent border border-green-600 text-white/70' :
                   comp.category === 'Gen Tech' ? 'bg-transparent border border-blue-600 text-white/70' :
@@ -146,21 +147,21 @@ export default function Competitions() {
               </div>
               
               {/* Competition Title */}
-              <h3 className="text-lg md:text-xl font-semibold text-white mb-2 md:mb-3">{comp.title}</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-white mb-2 md:mb-3" data-aos="fade-up">{comp.title}</h3>
               
               {/* Prize */}
               <div className="mb-2 md:mb-3">
-                <span className="text-xl md:text-2xl font-bold text-green-400">{comp.prize}</span>
+                <span className="text-xl md:text-2xl font-bold text-green-400" data-aos="fade-up">{comp.prize}</span>
               </div>
               
               {/* Date and Time */}
-              <div className="flex justify-center gap-3 md:gap-4 mb-3 md:mb-4 text-xs md:text-sm">
+              <div className="flex justify-center gap-3 md:gap-4 mb-3 md:mb-4 text-xs md:text-sm" data-aos="fade-up">
                 <p className="text-cyan-400">{comp.date}</p>
                 <p className="text-gray-400">{comp.time}</p>
               </div>
               
               {/* Register Button */}
-              <div className="w-full md:w-[50%] mx-auto bg-gradient-to-br from-blue-600 to-purple-600 p-[2px] rounded-lg hover:from-blue-700 hover:to-purple-700 hover:cursor-pointer transition-colors">
+              <div className="w-full md:w-[50%] mx-auto bg-gradient-to-br from-blue-600 to-purple-600 p-[2px] rounded-lg hover:from-blue-700 hover:to-purple-700 hover:cursor-pointer transition-colors" data-aos="fade-up">
                 <div className="bg-black/80 hover:bg-black/90 rounded-lg py-2">
                   <span className="text-white font-semibold text-sm md:text-base">Register Now</span>
                 </div>

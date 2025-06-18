@@ -79,16 +79,17 @@ export default function Events() {
       {/* Particle Background */}
       <ParticleBackground />
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">
+        <h1 className="text-4xl md:text-5xl font-bold font-mechanismo text-center mb-12 gradient-text"
+        data-aos="fade-up">
           EVENTS
         </h1>
         
         {/* Filter and Sort Controls */}
         <div className="flex justify-center mb-8">
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-2 md:p-6 border border-slate-700 mx-4">
-            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-2 md:p-6 border border-slate-700 mx-4" data-aos="fade-up">
+            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4" data-aos="fade-up">
               {/* Filter Buttons */}
-              <div className="flex flex-wrap gap-2 justify-center">
+              <div className="flex flex-wrap gap-2 justify-center" data-aos="fade-up">
                 {filterOptions.map((filter) => (
                   <button
                     key={filter}
@@ -127,11 +128,12 @@ export default function Events() {
         </div>
 
         {/* Events Grid */}
-        <div className="grid grid-cols-1 gap-8 md:gap-12 mx-4 md:mx-24 lg:mx-80">
+        <div className="grid grid-cols-1 gap-8 md:gap-12 mx-4 md:mx-24 lg:mx-80" data-aos="fade-up">
           {sortedEvents.map((event, index) => (
-            <div key={index} className="bg-gradient-to-b from-black/10 via-blue-300/10 to-black/10 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 md:px-8 hover:scale-105 transition-transform duration-300 shadow-sm shadow-white/20 hover:shadow-md hover:shadow-white/30">
+            <div key={index} className="bg-gradient-to-b from-black/10 via-blue-300/10 to-black/10 backdrop-blur-sm border border-slate-700 rounded-xl p-4 md:p-6 md:px-8 hover:scale-105 transition-transform duration-300 shadow-sm shadow-white/20 hover:shadow-md hover:shadow-white/30"
+            data-aos="fade-up">
               <div className="mb-4 md:mb-6 flex flex-row justify-between items-start gap-3">
-                <h3 className="text-xl md:text-2xl lg:text-4xl font-bold text-white flex-1">{event.title}</h3>
+                <h3 className="text-xl md:text-2xl lg:text-4xl font-bold text-white flex-1" data-aos="fade-up">{event.title}</h3>
                 <span className={`px-3 py-1 md:px-4 md:py-2 rounded-xl text-sm md:text-base font-semibold flex-shrink-0 ${
                   event.category === 'Workshop' ? 'bg-transparent border border-green-600 text-white/70' :
                   event.category === 'Talk' ? 'bg-transparent border border-blue-600 text-white/70' :
@@ -142,13 +144,13 @@ export default function Events() {
                 </span>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-3 md:gap-6 mb-4 md:mb-6">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-6 mb-4 md:mb-6" data-aos="fade-up">
                 <p className="text-cyan-400 text-base md:text-lg font-medium">{event.date}</p>
                 <p className="text-gray-400 text-base md:text-lg">{event.time}</p>
               </div>
               
               {/* Circular Down Arrow Button */}
-              <div className="flex justify-center md:-mb-4">
+              <div className="flex justify-center md:-mb-4" data-aos="zoom-out">
                 <button 
                   onClick={() => openModal(event)}
                   className="w-8 h-8 bg-black/10 border border-blue-600 rounded-full flex items-center justify-center hover:border-blue-400 transition-colors hover:scale-110"
@@ -164,12 +166,14 @@ export default function Events() {
 
         {/* Modal Popup */}
         {isModalOpen && selectedEvent && (
-          <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-            <div className="bg-slate-800 rounded-2xl p-6 md:p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+          <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+            <div className="bg-slate-800/10 border border-slate-300/20 backdrop-blur-md rounded-2xl p-6 md:p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
+            data-aos="fade-up">
               {/* Close Button */}
               <button 
                 onClick={closeModal}
-                className="absolute top-4 right-4 w-8 h-8 bg-slate-700 rounded-full flex items-center justify-center hover:bg-slate-600 transition-colors"
+                className="absolute top-4 right-4 w-8 h-8 bg-transparent border border-slate-300/20 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors"
+                data-aos="zoom-out"
               >
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -177,7 +181,7 @@ export default function Events() {
               </button>
 
               {/* Modal Content */}
-              <div className="pr-8">
+              <div className="pr-8" data-aos="fade-up">
                 <div className="mb-6 flex flex-col sm:flex-row justify-between items-start gap-3">
                   <span className={`px-4 py-2 rounded-xl text-base font-semibold ${
                     selectedEvent.category === 'Workshop' ? 'bg-transparent border-2 border-green-600 text-white/70' :
@@ -189,18 +193,18 @@ export default function Events() {
                   </span>
                 </div>
                 
-                <h2 className="text-2xl md:text-4xl font-bold text-white mb-6">{selectedEvent.title}</h2>
+                <h2 className="text-2xl md:text-4xl font-bold text-white mb-6" data-aos="fade-up">{selectedEvent.title}</h2>
                 
-                <div className="flex flex-col sm:flex-row gap-6 mb-4">
+                <div className="flex flex-col sm:flex-row gap-6 mb-4" data-aos="fade-up">
                   <p className="text-cyan-400 text-lg font-medium">{selectedEvent.date}</p>
                   <p className="text-gray-400 text-lg">{selectedEvent.time}</p>
                 </div>
                 
                 <div className="mb-6">
-                  <span className="text-green-400 font-bold text-xl">Prize: {selectedEvent.prize}</span>
+                  <span className="text-green-400 font-bold text-xl" data-aos="fade-up">Prize: {selectedEvent.prize}</span>
                 </div>
                 
-                <p className="text-gray-300 text-lg leading-relaxed">{selectedEvent.description}</p>
+                <p className="text-gray-300 text-lg leading-relaxed" data-aos="fade-up">{selectedEvent.description}</p>
               </div>
             </div>
           </div>
