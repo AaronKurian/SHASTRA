@@ -145,7 +145,7 @@ export default function Events() {
 
           {isModalOpen && selectedEvent && (
             <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-              <div className="bg-slate-800/10 border border-slate-300/20 backdrop-blur-md rounded-2xl p-6 md:p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
+              <div className="bg-slate-800/10 border border-slate-300/20 backdrop-blur-md rounded-2xl p-4 md:p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto mt-20 relative"
               data-aos="fade-up">
                 <button 
                   onClick={closeModal}
@@ -180,7 +180,7 @@ export default function Events() {
                     <span className="text-green-400 font-bold text-xl" data-aos="fade-up">Prize: {selectedEvent.prize}</span>
                   </div>
                   
-                  <p className="text-gray-300 text-lg leading-relaxed" data-aos="fade-up">{selectedEvent.description}</p>
+                  <p className="text-gray-300 text-sm md:text-lg leading-relaxed" data-aos="fade-up">{selectedEvent.description}</p>
                 </div>
               </div>
             </div>

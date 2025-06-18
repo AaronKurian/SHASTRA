@@ -363,7 +363,7 @@ export const masterEventData = [
     title: 'Med Expo',
     category: 'General',
     subCategory: null,
-    description: 'Med Expo exhibits the wide realms of the Biomedical Engineering field. Features real-time NICU simulation, critical care displays, and brain maze games.',
+    description: 'Med Expo exhibits the wide realms of the Biomedical Engineering field. The expo contains the following activities to recharge your pulse: A real-time simulation of a NICU and critical care unit will be showcased, offering viewers an inside look at the equipment and technology vital for advanced patient care. A maze game in the theme of brain navigating through a series of complex pathways designed to resemble the brain regions. Players would need to solve puzzles and small memory based games which could add fun and help reinforce the brain.',
     venue: '311, 312, 314, PROJECT LAB',
     schedule: {
       'Day 1': '9:30 AM TO 4:30 PM',
@@ -379,7 +379,7 @@ export const masterEventData = [
     title: 'Go Karting',
     category: 'General',
     subCategory: null,
-    description: 'High-speed go-karting experience with 3-lap and 5-lap options. Feel the adrenaline in a safe, dynamic setting.',
+    description: 'Rev up your engines and dive into the ultimate go-karting thrill ride! Imagine the wind in your face as you navigate sharp turns, accelerate down straightaways, and battle for the best lap time. Choose between a quick 3-lap sprint or go all in with a pulse-pounding 5-lap showdown—its your race, your rules. Whether you are a motorsport pro or a first-time racer, this high-speed adventure offers non-stop action in a safe, dynamic setting. Feel the adrenaline surge as you chase the checkered flag and create memories that will leave you craving more. The track awaits—are you ready to own it?',
     venue: 'COLLEGE GROUND',
     schedule: {
       'Day 1': '9:30 AM TO 4:30 PM',
@@ -395,7 +395,7 @@ export const masterEventData = [
     title: 'Sparsham',
     category: 'General',
     subCategory: null,
-    description: 'Social initiative bringing students from special schools into the fest atmosphere through activities, games, and programs.',
+    description: 'Sparsham is a social initiative as a part of Excel 2024 that focuses on bringing students from special schools into the vibrant atmosphere of the fest. The program is designed to create a day of joy and togetherness through activities such as open mic sessions, fun games, visiting stalls, and participating in various programs organized by NSS volunteers. The objective of Sparsham 2.0 is to provide these students with a memorable experience, fostering curiosity and encouraging them to explore and enjoy the wonders of the world.',
     venue: '201',
     schedule: {
       'Day 1': '9:30 AM TO 3:30 PM',
@@ -427,7 +427,7 @@ export const masterEventData = [
     title: 'Game Zone',
     category: 'General',
     subCategory: null,
-    description: 'Gaming competition featuring Valorant, Virtual Reality games, and eFootball tournaments.',
+    description: 'Get ready to level up your gaming skills at Game Zone! Face off against your friends in a series of games including Valorant, Virtual Reality games and eFootball. Push limits, make memories, and have a blast with your fellow gamers.',
     venue: '310',
     schedule: {
       'Day 1': '10:00 AM TO 4:00 PM',
@@ -443,7 +443,7 @@ export const masterEventData = [
     title: 'Open Mic',
     category: 'General',
     subCategory: null,
-    description: 'Platform for showcasing talents including singing, dancing, storytelling, stand-up comedy, and more.',
+    description: 'Open Mic is a non-technical event conducted as part of Excel 2024, offering participants the opportunity to showcase their skills across various realms, including singing, dancing, storytelling, stand-up comedy or any hidden talent that celebrates self-expression in all its forms. Scheduled from January 24 to 26 during the fest, participants are assigned class-wise slots to perform for 2 to 7 minutes, allowing them to take the spotlight and let their creativity shine.',
     venue: 'ELGA',
     schedule: {
       'Day 1': '10:00 AM TO 4:00 PM',
@@ -459,7 +459,7 @@ export const masterEventData = [
     title: 'Fun Zone',
     category: 'General',
     subCategory: null,
-    description: 'Interactive outdoor games and activities designed to inspire connections through friendly competitions.',
+    description: 'Fun Zone is an engaging outdoor event featuring interactive games and activities designed to inspire connections through fun and friendly competitions. Set in a carefully curated space with vibrant props and a welcoming ambiance. The event is open to all, with no registration fee, ensuring accessibility for participants of all backgrounds and skill levels. The activities are crafted to encourage interaction and enjoyment in a vibrant environment. Three games will be held at Casa and three at the Amphitheatre, providing an ideal setting for participants to explore their skills, strategy, and teamwork. Whether experienced or new to these activities, attendees can look forward to days filled with active engagement and camaraderie.',
     venue: 'AMPHITHEATRE',
     schedule: {
       'Day 1': '10:00 AM TO 4:00 PM',
@@ -475,7 +475,7 @@ export const masterEventData = [
     title: 'Human Snadder',
     category: 'General',
     subCategory: null,
-    description: 'Life-sized snakes and ladders game with lucky rolls, speed zones, and challenge squares.',
+    description: 'Human Snadder is a twist on the classic game of snakes and ladders. Players can test their luck by stumbling through a life sized board containing squares with lucky rolls, speed zones and challenge squares making it more exciting and fun. The objective is to be the first one to reach the finish point.',
     venue: 'AMPHITHEATRE',
     schedule: {
       'Day 1': '10:00 AM TO 4:00 PM',
@@ -491,7 +491,7 @@ export const masterEventData = [
     title: 'Rage Room',
     category: 'General',
     subCategory: null,
-    description: 'Stress relief experience where you can safely smash items in a controlled environment with safety gear.',
+    description: 'Welcome to the Rage Room, where stress meets release in the most exhilarating way possible! We provide a safe and controlled environment for you to unleash pent-up emotions and frustrations by smashing and breaking items like plates, glass bottles, and old electronics, complete with dramatic lighting, themed setups and customizable music playlists to elevate your session. With safety gear including helmets, gloves, and goggles, you can enjoy the experience without any worry. Whether solo, duo, or group sessions, the Rage Room is an exciting way to de-stress and let your worries out.',
     venue: '309',
     schedule: {
       'Day 1': '10:00 AM TO 4:00 PM',
@@ -507,7 +507,7 @@ export const masterEventData = [
     title: 'Laser War',
     category: 'General',
     subCategory: null,
-    description: 'Team-based laser tag battle in neon-lit arena with strategic zones and obstacles.',
+    description: 'Don your vests, flex your aims, step into the neon-lit arena and let out the fun and laughter! Get ready to hide, aim and dodge laser shots as you conquer the excitement of this very colourful segment of Excel 2024. Team up with your amazing battle-mates and craft your moves to overcome the obstacles and strategic zones that cluster the arena. Arriving with a guarantee of pure pleasure and amusement, Laser War has neither winners nor losers — just high-end energy, friendship and team-spirit.',
     venue: 'VOLLEYBALL COURT',
     schedule: {
       'Day 1': '10:00 AM TO 4:00 PM',
@@ -541,7 +541,7 @@ export const masterEventData = [
     title: 'Spotlights',
     category: 'Talk',
     subCategory: null,
-    description: 'Panel discussion with Sachin Warrier, Vinayak Sasikumar, and Malayali Monkeys exploring music and storytelling.',
+    description: 'Join us for an enriching panel discussion with the talented artists that are Sachin Warrier, Vinayak Sasikumar and Malayali Monkeys as they explore the powerful connection between music and storytelling. Through personal anecdotes and insightful discussions, they\'ll share how melodies and lyrics convey emotions, narrate journeys, and immerse listeners in unique experiences. Discover the art of storytelling through music and gain a deeper appreciation for its emotional and cultural impact.',
     venue: 'INTERNAL AUDITORIUM',
     schedule: {
       'Day 1': '10:00 AM TO 12:30 PM',
@@ -557,7 +557,7 @@ export const masterEventData = [
     title: 'Unmasked',
     category: 'Talk',
     subCategory: null,
-    description: 'Mentalism and hypnosis performance by Mentalist Shamil Muchukunnu, featuring mind reading and psychological illusions.',
+    description: 'Join us for Unmasked, where the intriguing world of mentalism and hypnosis comes to life. Featuring Mentalist Shamil Muchukunnu, a professional entertainer from Kerala with an impressive Instagram following of over 183k, this event promises to captivate and amaze. Known for his remarkable skills in mind reading and psychological illusions, Shamil blends entertainment with the art of suggestion to create unforgettable performances. Don\'t miss this opportunity to witness magic and mentalism like never before.',
     venue: 'INTERNAL AUDITORIUM',
     schedule: {
       'Day 1': '1:30 PM TO 3:30 PM',
@@ -573,7 +573,7 @@ export const masterEventData = [
     title: 'Digital Roads',
     category: 'Talk',
     subCategory: null,
-    description: 'IT & Business insights by Mr. Suresh Kumar K on leveraging technology for business growth.',
+    description: 'Mr Suresh Kumar K, Managing Director & Founder of Skybertech Pvt Ltd., an expert in his field, is all geared up to give us ideas to ponder about the future of a dynamic, ever-evolving and exciting industry. The IT & Business sector employs almost five million people in India alone. And this industry is only projected to keep growing further! Find out more on how to leverage your business, your company or your career using the power of information technology in this exciting session.',
     venue: 'INTERNAL AUDITORIUM',
     schedule: {
       'Day 1': null,
@@ -589,7 +589,7 @@ export const masterEventData = [
     title: '.ISSUE!',
     category: 'Talk',
     subCategory: null,
-    description: 'Political dialogue platform with diverse perspectives from Congress, BJP, LDF representatives and social critics.',
+    description: '.ISSUE! is a platform for informed dialogue, bringing together diverse perspectives to discuss critical social and political issues. Join us for engaging conversations with leading voices, including Adv. Abin Varkey (Congress), Adv. S Suresh (BJP), P M Arsho (LDF), social critic Sunny M Kapicadu, activist Rahul Easwar, and moderated by Christina Cherian from 24 News. Share your voice, listen to others, and let\'s work together to build a better future.',
     venue: 'INTERNAL AUDITORIUM',
     schedule: {
       'Day 1': null,
@@ -605,7 +605,7 @@ export const masterEventData = [
     title: 'RJ Conclave',
     category: 'Talk',
     subCategory: null,
-    description: 'Interactive session with renowned RJs sharing behind-the-scenes stories from the radio industry.',
+    description: 'A vibrant and engaging event featuring 2 renowned RJs, who will take center stage to share their fascinating stories and experiences. This interactive session offers a behind-the-scenes glimpse into the captivating world of radio. From hilarious on-air moments and the evolution of the industry to handling unexpected situations and forging meaningful connections with listeners, the RJs will explore a range of intriguing topics designed to entertain and inspire. Each RJ will spotlight a topic they are passionate about—whether it\'s navigating live show surprises, cultivating a bond with their audience, or building a successful career in radio.',
     venue: 'INTERNAL AUDITORIUM',
     schedule: {
       'Day 1': null,
@@ -623,7 +623,7 @@ export const masterEventData = [
     title: 'UAV Technology Workshop',
     category: 'Workshop',
     subCategory: null,
-    description: 'Comprehensive introduction to unmanned aerial vehicles with hands-on ArduPilot simulation experience.',
+    description: 'The UAV Technology Workshop is a comprehensive introduction to unmanned aerial vehicles (UAVs). This workshop provides an in-depth understanding of drone history, component functionality, and the software ecosystem, including hands-on experience with simulation tools like ArduPilot. Participants will gain practical insights into drone navigation and explore the potential of UAVs in future applications.',
     venue: 'MEDIA HALL',
     schedule: {
       'Day 1': '9:30 AM TO 12:30 PM',
@@ -639,7 +639,7 @@ export const masterEventData = [
     title: 'Computer Vision and Robotics Workshop',
     category: 'Workshop',
     subCategory: null,
-    description: 'Explore computer vision applications in robotics including image processing and object recognition.',
+    description: 'The Computer Vision and Robotics Workshop delves into the applications of computer vision in robotics. Participants will explore foundational concepts such as image processing, vision-based navigation, and object recognition. The workshop emphasizes practical applications, emerging trends, and real-world challenges, equipping attendees with the knowledge to contribute to advancements in robotics.',
     venue: 'SDPK HALL',
     schedule: {
       'Day 1': '1:30 PM TO 3:30 PM',
@@ -655,7 +655,7 @@ export const masterEventData = [
     title: 'IOT and Embedded Systems Workshop',
     category: 'Workshop',
     subCategory: null,
-    description: 'Hands-on workshop covering IoT fundamentals, microcontroller systems, and security challenges.',
+    description: 'When executed correctly, the combination of software and hardware provides the foundation for a multitude of crucial functions that drive modern technology. This intricate relationship centers around microcontroller or microprocessor-based systems, the components forming the backbone of countless devices we rely on daily. The (Internet of Things) IoT refers to a vast network of physical objects embedded with sensors, software, and other connective technologies, and with its expansion comes the necessity of addressing its associated security challenges.',
     venue: 'MEDIA HALL',
     schedule: {
       'Day 1': null,
@@ -671,7 +671,7 @@ export const masterEventData = [
     title: 'PCB Design Workshop',
     category: 'Workshop',
     subCategory: null,
-    description: 'Master PCB design fundamentals including component basics, layout design, and simulation techniques.',
+    description: 'Master the art of PCB design with our comprehensive PCB Design Workshop. This hands-on session introduces participants to the fundamentals of printed circuit boards, covering essential topics like component basics, layout design, and simulation using industry-standard software. Acquire practical knowledge about prototyping techniques and troubleshooting methods. A must-attend for all electronics enthusiasts!',
     venue: 'SDPK HALL',
     schedule: {
       'Day 1': null,
@@ -687,7 +687,7 @@ export const masterEventData = [
     title: 'Space Robotics Workshop',
     category: 'Workshop',
     subCategory: null,
-    description: 'Explore intersection of robotics and space exploration with AI applications in astronomy.',
+    description: 'The Space Robotics Workshop provides a unique opportunity for participants to delve into the intersection of robotics and space exploration. This hands-on session covers key advancements in space technology, fundamental robotics principles for space applications, and cutting-edge innovations shaping the future. Through engaging discussions, practical case studies, and an exploration of artificial intelligence in astronomy, the workshop equips attendees with the knowledge and skills to tackle real-world challenges in space robotics.',
     venue: 'MEDIA HALL',
     schedule: {
       'Day 1': null,
@@ -705,7 +705,7 @@ export const masterEventData = [
     title: 'Capital Connect',
     category: 'Conference',
     subCategory: null,
-    description: 'Financial planning session on achieving financial freedom with salary by Nayanraj, CEO of Dream Wealth Edu.',
+    description: 'Join us for Capital Connect, an insightful session on the "Importance of Financial Planning in Daily Life & Achieving Financial Freedom with Your Salary" by Nayanraj, Founder & CEO of Dream Wealth Edu. This session will cover practical strategies for managing finances, starting your financial planning journey, and achieving long-term financial freedom. With actionable advice and an interactive Q&A, participants will gain valuable insights to make smarter financial decisions in everyday life.',
     venue: 'INTERNAL AUDITORIUM',
     schedule: {
       'Day 1': null,
@@ -713,6 +713,22 @@ export const masterEventData = [
       'Day 3': '1:30 PM TO 3:30 PM'
     },
     prize: '₹400',
+    image: null,
+    type: 'event'
+  },
+  {
+    id: 'techtyro',
+    title: 'TechTyro 2.0',
+    category: 'General',
+    subCategory: null,
+    description: 'TechTyro 2.0 is a social initiative event as part of Excel 2024, that focuses on teaching school students about the latest developments in the field of engineering and coding. The program aims to reach out to schools and teach students from grade 8th about AI & ML technologies and their applications. The objective of TechTyro 2.0 is to increase the technical proficiency of students and provide them with practical training to ignite their interest in engineering.',
+    venue: 'COMPUTER LAB 1',
+    schedule: {
+      'Day 1': null,
+      'Day 2': '1:00 PM TO 4:00 PM',
+      'Day 3': null
+    },
+    prize: '₹180',
     image: null,
     type: 'event'
   }
